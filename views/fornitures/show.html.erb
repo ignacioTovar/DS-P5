@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @forniture %>
+
+<div>
+  <%= link_to "Edit this forniture", edit_forniture_path(@forniture) %> |
+  <%= link_to "Back to fornitures", fornitures_path %>
+
+  <%= button_to "Destroy this forniture", @forniture, method: :delete %>
+</div>

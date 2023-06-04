@@ -1,0 +1,10 @@
+<div class ="content">
+<h1>Página principal </h1>
+	<% if logged_in? %>    
+		<h1>Selecciona lo que quieres configurar:</h1>
+		<%= button_to "usuarios", '/users', method: :get%><br>
+		<%= button_to "muebles", '/fornitures', method: :get%><br>
+	<%else%>
+		<%= button_to "Login", '/login', method: :get%>
+	<%end%>
+</div>
