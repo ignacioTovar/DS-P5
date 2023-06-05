@@ -1,0 +1,47 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+
+  <%= dom_id forniture %> {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+</style>
+
+<div class="<%= dom_id forniture %>">
+  <p>
+    <strong>Nombre:</strong>
+    <%= forniture.nombre %>
+  </p>
+
+  <p>
+    <strong>Tipo:</strong>
+    <%= forniture.tipo %>
+  </p>
+
+  <p>
+    <strong>Material:</strong>
+    <%= forniture.material %>
+  </p>
+
+  <p>
+    <strong>Cantidad:</strong>
+    <%= forniture.cantidad %>
+  </p>
+
+</div>

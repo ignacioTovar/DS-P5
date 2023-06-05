@@ -1,0 +1,41 @@
+<h1 class="title">New user</h1>
+
+<div class="form-container">
+  <%= render "form", user: @user %>
+</div>
+
+<div>
+  <%= link_to "Back to users", users_path, class: "button back-link" %>
+</div>
+
+<style>
+.title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+</style>

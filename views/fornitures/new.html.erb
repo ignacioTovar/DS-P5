@@ -1,0 +1,75 @@
+<h1>New forniture</h1>
+
+<%= render "form", forniture: @forniture %>
+
+<br>
+
+<div>
+  <%= link_to "Back to fornitures", fornitures_path %>
+</div>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .forniture-links {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .forniture-links a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .forniture-links a:hover {
+    text-decoration: underline;
+  }
+</style>

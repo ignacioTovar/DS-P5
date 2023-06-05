@@ -1,0 +1,72 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Fornitures</h1>
+
+<div id="fornitures">
+  <% @fornitures.each do |forniture| %>
+    <%= render forniture %>
+    <p>
+      <%= link_to "Show this forniture", forniture %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New forniture", new_forniture_path %>
+<div>
+  <%= link_to "Back to users", users_path, class: "button back-link" %>
+</div>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+
+  p {
+    color: green;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  #fornitures {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .forniture {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .forniture p {
+    margin: 0;
+  }
+
+  .forniture a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .forniture a:hover {
+    text-decoration: underline;
+  }
+
+  .new-forniture-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+</style>

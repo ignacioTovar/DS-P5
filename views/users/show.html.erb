@@ -1,0 +1,58 @@
+<p class="notice"><%= notice %></p>
+
+<div class="user-container">
+  <%= render @user %>
+</div>
+
+<div class="user-actions">
+  <%= link_to "Edit this user", edit_user_path(@user), class: "button edit-link" %> |
+  <%= link_to "Back to users", users_path, class: "button back-link" %>
+
+  <%= button_to "Destroy this user", @user, method: :delete, class: "button destroy-button", data: { confirm: "Are you sure?" } %>
+</div>
+
+<style>
+.notice {
+  color: green;
+}
+
+
+.user-container {
+  margin-bottom: 20px;
+}
+
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+
+.edit-link {
+  margin-right: 10px;
+}
+
+
+.back-link {
+  margin-right: 10px;
+}
+
+
+.destroy-button {
+  background-color: #ff0000;
+}
+
+.destroy-button:hover {
+  background-color: #cc0000;
+}
+</style>

@@ -1,0 +1,41 @@
+<div class="content">
+  <h1>Página principal</h1>
+
+  <% if logged_in? %>    
+    <h1>Selecciona lo que quieres configurar:</h1>
+    <%= button_to "Usuarios", '/users', method: :get, class: "button" %><br>
+    <%= button_to "Muebles", '/fornitures', method: :get, class: "button" %><br>
+  <% else %>
+    <%= button_to "Login", '/login', method: :get, class: "button" %>
+  <% end %>
+</div>
+
+<style>
+.content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+</style>

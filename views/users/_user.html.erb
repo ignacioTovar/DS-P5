@@ -1,0 +1,58 @@
+<style>
+#<%= dom_id(user) %> {
+  background-color: #F4F4F4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* Estilos de cada atributo */
+p strong {
+  color: #4CAF50;
+}
+
+p span {
+  color: #888;
+}
+</Style>
+
+<div id="<%= dom_id user %>">
+  <p>
+    <strong>Nombre:</strong>
+    <%= user.nombre %>
+  </p>
+
+  <p>
+    <strong>Dni:</strong>
+    <%= user.dni %>
+  </p>
+
+  <p>
+    <strong>Correo:</strong>
+    <%= user.correo %>
+  </p>
+
+  <p>
+    <strong>Domicilio:</strong>
+    <%= user.domicilio %>
+  </p>
+
+  <p>
+    <strong>Pass:</strong>
+    <%= user.pass %>
+  </p>
+
+  <p>
+    <strong>Admin:</strong>
+    <%= user.admin %>
+  </p>
+
+</div>
